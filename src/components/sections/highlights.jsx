@@ -13,7 +13,7 @@ const Highlights = () =>{
                 <div class = "min-h-[80vh] flex ">
                     <div className="h-full flex flex-col basis-2/5 ">
                         <SectionTitle className="text-4xl mb-3" >Highlights</SectionTitle>
-                        <Text className="mb-5max-w-[20rem] text-sm font-[400]">
+                        <Text className="mb-5 max-w-[20rem] text-sm font-[400]">
                             "A mix of hackathons, passion projects, and explorations. Each one a chance to stretch design, code, and imagination a little further."
                         </Text>
                         <Text className="flex">kroedstima</Text>
