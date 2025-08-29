@@ -1,0 +1,40 @@
+import React from "react";
+import Title from "../tokens/atoms/title"
+import Animation from "../pieces/animation"
+import Text from "../tokens/atoms/text";
+import Button from "../tokens/atoms/button";
+
+const Hero = () =>{
+    return (
+        <div>
+         <div className=" flex flex-col min-h-[calc(95vh-var(--navbar-height))] " >
+            <div className="flex-1  flex flex-col "> 
+                    <div className=" flex-1 grid grid-cols-12 gap-4 ">
+                        <div className="col-start-1 col-span-6 ">
+                            <Text className="text-sub ml-[0.3em]">Hi, I'm an aspiring  </Text>
+                            <Title className="leading-[0.9] text-clampSub " >Cloud <br />Engineer</Title>
+                            <Button>View Projects</Button>
+                        </div>
+                        <div className="col-start-12 col-end-9 flex justify-end items-end">
+                            <p>i dont belong here
+
+                            </p>
+                        </div>
+                        
+                        
+                    </div>
+                    <div className="flex gap-32">
+                        <Text className="w-62">This is my documentation of what I’ve learned and built so far.</Text>
+                        <Text className="w-72">I love breaking down complex concepts into visual analogies and interactive stories—so be sure to check out my guides and labs in Legends.</Text>
+                    </div>
+                    
+                  
+            </div>
+           </div>
+        </div>
+       
+
+    );
+};
+
+export default Hero;
