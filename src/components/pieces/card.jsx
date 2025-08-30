@@ -11,7 +11,7 @@ const Wide = ({
   
   return (
     <div
-      className={`h-full w-full flex flex-col border border-black overflow-hidden ${className}`}
+      className={`h-[90%] w-[70%] flex flex-col border border-black overflow-hidden ${className}`}
     >
       {image && (
         <img src={image} alt={title} className="w-full object-cover h-[35%]" />

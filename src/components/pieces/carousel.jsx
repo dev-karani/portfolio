@@ -2,7 +2,7 @@
 
 import useEmblaCarousel from "embla-carousel-react"
 import { useCallback } from "react"
-import Card from "./card"
+import Card from "./cardWide"
 
 export default function EmblaCarousel({children}) {
   const [emblaRef, emblaApi] = useEmblaCarousel({

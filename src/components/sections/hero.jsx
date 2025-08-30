@@ -10,10 +10,10 @@ const Hero = () =>{
          <div className=" flex flex-col min-h-[calc(95vh-var(--navbar-height))] " >
             <div className="flex-1  flex flex-col "> 
                     <div className=" flex-1 grid grid-cols-12 gap-4 ">
-                        <div className="col-start-1 col-span-6 ">
-                            <Text className="text-sub ml-[0.3em]">Hi, I'm an aspiring  </Text>
-                            <Title className="leading-[0.9] text-clampSub " >Cloud <br />Engineer</Title>
-                            <Button>View Projects</Button>
+                        <div className="col-start-1 col-span-6 mt-8">
+                            <Text className="text-sub ml-[0.3em] mb-2">Hi, I'm an aspiring  </Text>
+                            <Title className="leading-[0.9] text-clampSub mb-9  " >Cloud <br />Engineer</Title>
+                            <Button className="m-4 text-coconut bg-[#14C8EB]">View Projects</Button>
                         </div>
                         <div className="col-start-12 col-end-9 flex justify-end items-end">
                             <p>i dont belong here

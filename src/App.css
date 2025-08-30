@@ -9,7 +9,7 @@
 
 .embla__container {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   height: 100%;
 }
 
@@ -25,7 +25,7 @@
 .embla__container::before,
 .embla__container::after {
   content: "";
-  flex: 0 0 20px; /* same as your slide gap */
+  flex: 0 0 15px; /* same as your slide gap */
 }
 
 @plugin "tailwindcss-animate";
