@@ -4,13 +4,16 @@ import Text from "../tokens/atoms/text";
 import Header from "../tokens/atoms/Header";
 import Paragraph from "../tokens/atoms/paragraph";
 import Section from "./section";
+import EmblaCarousel from "../pieces/carousel";
+import Card from "../pieces/card";
 
 
 const Highlights = () =>{
     return (
         <>
             <Section className="pt-28 ">
-                <div class = "min-h-[80vh] flex ">
+            </Section>
+                            <div class = "h-[85vh] flex ">
                     <div className="h-full flex flex-col basis-2/5 ">
                         <SectionTitle className="text-4xl mb-3" >Highlights</SectionTitle>
                         <Text className="mb-5 max-w-[20rem] text-sm font-[400]">
@@ -18,12 +21,40 @@ const Highlights = () =>{
                         </Text>
                         <Text className="flex">kroedstima</Text>
                      </div>
+                     <div className="basis-/5">
+                        <p></p>
+                     </div>
                     <div className=" basis-3/5 flex">
-                        <Text className="">julia</Text>
-                        <Text className="flex-1">Koedramea</Text>
+                        <EmblaCarousel>
+                            <div className="embla__slide">
+                                <Card
+                                  image="/mlue.png"
+                                  title="BlockChain Hackathon"
+                                  date="12 April 2025"
+                                  description="AI hackathon was a blend to create a digital recording tool for African heritage"
+                                />
+                            </div>
+                            <div className="embla__slide ">
+                                <Card
+                                  image="/internet.png"
+                                  title="How the Internet Really Works"
+                                  date="12 April 2025"
+                                  description="AI hackathon was a blend to create a digital recording tool for African heritage"
+                                />
+                            </div>
+                            <div className="embla__slide">
+                                <Card
+                                  image="/mlue.png"
+                                  title="BlockChain Hackathon"
+                                  date="12 April 2025"
+                                  description="AI hackathon was a blend to create a digital recording tool for African heritage"
+                                />
+                            </div>
+                            
+                        </EmblaCarousel>
                     </div>
                  </div>
-            </Section>
+                 <Section className="pt-28 "></Section>
         </>
         
     );

@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/pieces/navbar";
 import Hero from "../components/sections/hero";
-import Journey from "../components/sections/journey";
+import Journey from "../components/sections/techTracks";
 import Highlights from "../components/sections/highlights";
 
 const Homepage = () =>{
@@ -10,7 +10,6 @@ const Homepage = () =>{
         <Navbar/>
         <Hero/>
         <Highlights/>
-        <Journey/>
        </>
 
     );

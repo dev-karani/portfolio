@@ -5,7 +5,7 @@ const Button = ({children, className = "", ...props }) =>{
 
     return (
          <button
-      className={`border border-black px-3 py-1 mt-button ${className} `}
+      className={`border border-black text-coconut bg-graphite py-1.5 px-3 hover:bg-coconut hover:text-graphite transition${className} `}
       {...props}
     >
       <Text> {children}</Text>

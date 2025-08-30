@@ -12,16 +12,7 @@
   background-color: #F7F5F2;
   color:#1E1919;
 }
-.embla {
-  overflow: hidden;
-}
-.embla__container {
-  display: flex;
-}
-.embla__slide {
-  flex: 0 0 100%;
-  min-width: 0;
-}
+
 
 /* FoundersGrotesk */
 @font-face {
