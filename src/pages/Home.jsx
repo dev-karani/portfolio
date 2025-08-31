@@ -3,6 +3,8 @@ import Navbar from "../components/pieces/navbar";
 import Hero from "../components/sections/hero";
 import Journey from "../components/sections/techTracks";
 import Highlights from "../components/sections/highlights";
+import Tracks from "../components/sections/techTracks";
+import Footer from "../components/pieces/footer";
 
 const Homepage = () =>{
     return (
@@ -10,6 +12,8 @@ const Homepage = () =>{
         <Navbar/>
         <Hero/>
         <Highlights/>
+        <Tracks/>
+        <Footer/>
        </>
 
     );

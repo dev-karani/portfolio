@@ -4,7 +4,7 @@ const Header =({children, className = "", ...props }) =>{
 
     return (
          <p
-      className={`text-header font-PPMontreal mb-title ${className} `}
+      className={`text-2xl font-PPMontreal ${className} `}
       {...props}
     >
       {children}

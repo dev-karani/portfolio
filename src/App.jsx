@@ -1,6 +1,6 @@
 import './App.css' 
 import Container from './components/pieces/container';
-import Homepage from './pages/Cherry'
+import Homepage from './pages/Home'
 
 function App(){
   return (
