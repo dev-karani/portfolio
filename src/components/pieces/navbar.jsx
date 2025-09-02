@@ -7,7 +7,7 @@ const Navbar = () => {
 
      "> {/* only vertical padding, since Container handles x-padding */}
         <div className=" flex justify-between items-center ">
-          <a href="/" className=""><Text className="font-bold">Cherry</Text></a>
+          <a href="../section/mainpage.jsx" className=""><Text className="font-bold">Cherry</Text></a>
 
           <ul className="flex gap-20">
             <li><Text>Legend</Text></li>

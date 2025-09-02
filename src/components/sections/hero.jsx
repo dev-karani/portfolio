@@ -13,7 +13,7 @@ const Hero = () =>{
                         <div className="col-start-1 col-span-6 mt-8">
                             <Text className="text-sub ml-[0.3em] mb-2">Hi, I'm an aspiring  </Text>
                             <Title className="leading-[0.9] text-clampSub mb-9  " >Cloud <br />Engineer</Title>
-                            <Button className="m-4 text-coconut bg-[#14C8EB]">View Projects</Button>
+                            <Button className="">View Projects</Button>
                         </div>
                         <div className="col-start-13 col-end-10 flex justify-end items-end">
                             <Animation></Animation>

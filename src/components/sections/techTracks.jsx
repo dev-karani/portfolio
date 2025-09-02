@@ -19,18 +19,18 @@ const Tracks = () =>{
                         <Animation></Animation>
                     </div>
                 </div>
-                <div className="flex justify-around flex-1 mt-3.5">
+                <div className="flex justify-around  flex-1 mt-3.5">
                     <div className="flex flex-col">
                         <Header className="">Cloud</Header>
-                        <Text className="w-50">From browser to recepient  all in sll it so productive productive</Text>
+                        <Text className="w-40">From browser to recepient  all in sll it so productive productive</Text>
                     </div>
                     <div className="flex flex-col"> 
                         <Header>Cloud</Header>
-                        <Text className="w-50">From browser to recepient all in sll it so productive productive</Text>
+                        <Text className="w-40">From browser to recepient all in sll it so productive productive</Text>
                     </div>
                     <div className="flex flex-col">
                         <Header>Cloud</Header>
-                        <Text className="w-50">From browser to recepient all in sll it so productive productive</Text>
+                        <Text className="w-40">From browser to recepient all in sll it so productive productive</Text>
                     </div>
                 </div>
             </div>  

@@ -1,16 +1,24 @@
-import React from 'react'
-import Text from './text';
+import React from "react";
 
-const Button = ({children, className = "", ...props }) =>{
-
-    return (
-         <button
-      className={`border border-black text-coconut bg-graphite py-1.5 px-3 hover:bg-coconut hover:text-graphite transition${className} `}
+const Button = ({ children, className = "", ...props }) => {
+  return (
+    <button
+      className={`
+        inline-flex items-center justify-center
+        px-6 py-3
+        bg-gray-200 tex
+        text-sm text-graphite font-medium
+        border border-black text-coconut hover:bg-coconut hover:text-black        active:scale-95
+        transition-all duration-200
+        whitespace-nowrap
+        flex-shrink-0
+        ${className}
+      `}
       {...props}
     >
-      <Text> {children}</Text>
+      {children}
     </button>
-    );
+  );
 };
 
 export default Button;

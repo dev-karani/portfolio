@@ -5,6 +5,7 @@ import Journey from "../components/sections/techTracks";
 import Highlights from "../components/sections/highlights";
 import Tracks from "../components/sections/techTracks";
 import Footer from "../components/pieces/footer";
+import Main from "../components/sections/mainpage";
 
 const Homepage = () =>{
     return (
@@ -14,6 +15,7 @@ const Homepage = () =>{
         <Highlights/>
         <Tracks/>
         <Footer/>
+        <Main/>
        </>
 
     );

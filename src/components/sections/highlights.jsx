@@ -11,11 +11,11 @@ import EmblaCarousel from "../pieces/carousel";
 const Highlights = () =>{
     return (
         <>
-           <Section className="mt-40">
+           <Section className="mt-32">
                 <div className="min-h-screen flex flex-col">
-                  <div className="flex gap-16 px-4 justify-between align-baseline">
+                  <div className="flex px-4 flex-col">
                     <SectionTitle className="text-4xl mb-4">Highlights</SectionTitle>
-                    <Text className="mb-5 max-w-[20rem] text-sm font-[400]">
+                    <Text className=" max-w-[20rem] text-sm font-[400]">
                       "A mix of hackathons, passion projects, and explorations. Each one a
                       chance to stretch design, code, and imagination a little further."
                     </Text>
@@ -39,12 +39,25 @@ const Highlights = () =>{
                             title="Blockchain Hackathon"
                             date="12 April 2025"
                             description="AI hackathon was a blend to create a digital recording tool for African heritage"
-                    />     <Card
+                    />     
+                    <Card
                         image="/mlue.png"
                             title="Blockchain Hackathon"
                             date="12 April 2025"
                             description="AI hackathon was a blend to create a digital recording tool for African heritage"
-                    />                       
+                    />      
+                    <Card
+                        image="/mlue.png"
+                            title="Blockchain Hackathon"
+                            date="12 April 2025"
+                            description="AI hackathon was a blend to create a digital recording tool for African heritage"
+                    />   
+                    <Card
+                        image="/mlue.png"
+                            title="Blockchain Hackathon"
+                            date="12 April 2025"
+                            description="AI hackathon was a blend to create a digital recording tool for African heritage"
+                    />                    
                     </EmblaCarousel>
                   </div>
 

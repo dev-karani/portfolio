@@ -3,10 +3,10 @@ import Header from "../tokens/atoms/Header";
 import Text from "../tokens/atoms/text";
 import Button from "../tokens/atoms/button";
 
-const Card = ({ image, title, description, className = "", ...props }) => {
+const CardLegend = ({ image, title, description, className = "", ...props }) => {
   return (
     <div
-      className={`h-full flex flex-col overflow-hidden shadow-sm ${className}`}
+      className={` flex-[0_0_100%] sm:flex-[0_0_25%] lg:flex-[0_0_25%] h-full flex flex-col overflow-hidden shadow-sm ${className}`}
       {...props}
     >
       <div className="flex-1">
@@ -26,4 +26,4 @@ const Card = ({ image, title, description, className = "", ...props }) => {
   );
 };
 
-export default Card;
+export default CardLegend;
