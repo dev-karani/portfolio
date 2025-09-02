@@ -1,35 +1,29 @@
 import React from "react";
+import Header from "../tokens/atoms/Header";
+import Text from "../tokens/atoms/text";
 import Button from "../tokens/atoms/button";
 
-const Wide = ({
-  image,
-  title,
-  date,
-  description,
-  className = "",
-}) => {
-  
+const Card = ({ image, title, description, className = "", ...props }) => {
   return (
     <div
-      className={`h-[80%] w-[70%] flex flex-col border border-black overflow-hidden ${className}`}
+      className={`h-full flex flex-col overflow-hidden shadow-sm ${className}`}
+      {...props}
     >
-      {image && (
-        <img src={image} alt={title} className="w-full object-cover h-[35%]" />
-      )}
+      <div className="flex-1">
+        <img
+          src={image}
+          alt={title}
+          className=""
+        />
+      </div>
 
-      <div className="p-4 flex flex-col flex-1 justify:between, items-start;">
-        <div>
-        {title && <p className="font-bold text-2xl mb-4">{title}</p>}  
-        {date && <p className="text-xs font-thin mb-2 ">{date}</p>}
-        {description && (
-          <p className="text-sm mb-6">{description}</p>
-        )}
-        <Button className="py-0">view here</Button>
-        </div>
-
+      <div className="p-4 flex flex-col gap-2">
+        <Text className="text-base">{title}</Text>
+        <Text>{description}</Text>
+        <Button>view here</Button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Wide;
+export default Card;

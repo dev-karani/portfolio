@@ -23,8 +23,8 @@ const Animation =() =>{
   return (
     <div
       style={{
-        // height: "50vh",
-        // width: "50vw",
+        height: "50vh",
+        width: "50vw",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",

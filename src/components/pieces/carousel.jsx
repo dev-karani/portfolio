@@ -1,49 +1,46 @@
 "use client"
-
+import React, { useCallback } from "react"
 import useEmblaCarousel from "embla-carousel-react"
-import { useCallback } from "react"
-import Card from "./cardWide"
 
-export default function EmblaCarousel({children}) {
+export default function EmblaCarousel({ children }) {
   const [emblaRef, emblaApi] = useEmblaCarousel({
+    align: "start",
     loop: true,
-    align: "start", // alignment at the start
     slidesToScroll: 1,
-    slideSize:"auto",
   })
 
-  const scrollPrev = useCallback(() => {
-    if (emblaApi) emblaApi.scrollPrev()
-  }, [emblaApi])
-
-  const scrollNext = useCallback(() => {
-    if (emblaApi) emblaApi.scrollNext()
-  }, [emblaApi])
+  const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi])
+  const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi])
 
   return (
-    <div className="embla ">
-      {/* Viewport */}
-      <div className="embla__viewport h-[90%]" ref={emblaRef}>
-        <div className="embla__container w-full">
-          {children}
+    <div className="relative w-full h-full">
+      {/* Carousel viewport */}
+      <div className="overflow-hidden w-full h-full" ref={emblaRef}>
+        <div className="flex h-full">
+          {React.Children.map(children, (child, i) => (
+            <div
+              className="flex-[0_0_100%] sm:flex-[0_0_50%] lg:flex-[0_0_33.33%] p-4"
+              key={i}
+            >
+              <div className="h-full">{child}</div>
+            </div>
+          ))}
         </div>
       </div>
 
-      {/* Controls */}
-      <div className="flex justify-between">
-        <button
-          onClick={scrollPrev}
-          className=" px-4 py-2 hover:bg-gray-300"
-        >
-          Prev
-        </button>
-        <button
-          onClick={scrollNext}
-          className="px-4 hover:bg-gray-300"
-        >
-          Next
-        </button>
-      </div>
+      {/* Prev/Next buttons */}
+      <button
+        onClick={scrollPrev}
+        className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-2 rounded-full"
+      >
+        ‹
+      </button>
+      <button
+        onClick={scrollNext}
+        className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-2 rounded-full"
+      >
+        ›
+      </button>
     </div>
   )
 }

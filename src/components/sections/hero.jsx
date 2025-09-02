@@ -15,10 +15,8 @@ const Hero = () =>{
                             <Title className="leading-[0.9] text-clampSub mb-9  " >Cloud <br />Engineer</Title>
                             <Button className="m-4 text-coconut bg-[#14C8EB]">View Projects</Button>
                         </div>
-                        <div className="col-start-12 col-end-9 flex justify-end items-end">
-                            <p>i dont belong here
-
-                            </p>
+                        <div className="col-start-13 col-end-10 flex justify-end items-end">
+                            <Animation></Animation>
                         </div>
                         
                         

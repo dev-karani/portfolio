@@ -6,7 +6,7 @@ import Button from "../tokens/atoms/button";
 const Footer = ()=>{
     return(
         <div>
-            <Section>
+            <Section className="mt-32">
                 <div className="flex h-[80vh] flex-col items-stretch ">
                     <div className="flex mb-16">
                         <Text className="text-7xl"> Let's make something!</Text>
