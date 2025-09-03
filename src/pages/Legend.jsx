@@ -1,15 +1,8 @@
-import React from 'react'
-import Navbar from "../components/pieces/navbar";
-import Footer from "../components/pieces/footer";
-import Main from '../components/sections/mainpage';
+import React from "react";
+import Main from "../components/sections/main"; // ✅ import Main correctly
 
-const Legend =() => {
-    return (
-        <>
-            <Navbar/>
-            <Main/>
-            <Footer/>
-        </>
-    )
-}
+const Legend = () => {
+  return <Main />;
+};
+
 export default Legend;
