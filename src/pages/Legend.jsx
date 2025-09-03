@@ -12,3 +12,4 @@ const Legend =() => {
         </>
     )
 }
+export default Legend;

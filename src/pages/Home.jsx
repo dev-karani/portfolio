@@ -15,7 +15,6 @@ const Homepage = () =>{
         <Highlights/>
         <Tracks/>
         <Footer/>
-        <Main/>
        </>
 
     );

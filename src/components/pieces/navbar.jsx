@@ -1,19 +1,30 @@
 import React from "react";
 import Text from "../tokens/atoms/text";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className="py-2
-
-     "> {/* only vertical padding, since Container handles x-padding */}
+     "> 
         <div className=" flex justify-between items-center ">
-          <a href="../section/mainpage.jsx" className=""><Text className="font-bold">Cherry</Text></a>
-
+          <Link to='/Home' className="">
+              <Text className="font-bold">Home</Text>
+          </Link>
           <ul className="flex gap-20">
-            <li><Text>Legend</Text></li>
-            <li><Text>About Me</Text></li>
-            <li><Text>Projects</Text></li>
-
+            <li>
+              <Link to='/Legend'>
+                  <Text>Legend</Text>
+              </Link>
+            </li>
+            <li>
+              <Link to='/About'>
+                  <Text>About</Text>
+              </Link>
+            </li><li>
+              <Link to='/Projects'>
+                  <Text>Projects</Text>
+              </Link>
+            </li>
           </ul>
 
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
