@@ -14,57 +14,54 @@ const Main = ({ title, description, projects }) => {
       activeFilter === "all" ? true : project.tags?.includes(activeFilter)
     )
     .sort((a, b) => {
-        return sortOrder === "newest"
-          ? new Date(b.date) - new Date(a.date)
-          : new Date(a.date) - new Date(b.date);
+      return sortOrder === "newest"
+        ? new Date(b.date) - new Date(a.date)
+        : new Date(a.date) - new Date(b.date);
     });
-
 
   return (
     <Container>
       <div className="flex flex-col mt-8">
         <div className="grid grid-cols-12 min-h-[200vh]">
           <div className="col-start-1 col-end-13">
-            {/* Dynamic Section Title */}
+            {/* Section Title */}
             <SectionTitle>{title}</SectionTitle>
 
-            {/* Dynamic Section Description */}
+            {/* Section Description */}
             <Text className="max-w-xl">{description}</Text>
 
-            {/* Filter + Sort controls */}
-            <div className="mt-6 flex items-center gap-4">
-              <div className="flex gap-2">
-                {["all", "project", "writeup"].map((tag) => (
-                  <button
-                    key={tag}
-                    onClick={() => setActiveFilter(tag)}
-                    className={`px-3 py-1 rounded ${
-                      activeFilter === tag
-                        ? "bg-black text-white"
-                        : "bg-gray-200"
-                    }`}
-                  >
-                    {tag}
-                  </button>
-                ))}
-              </div>
-
-              <select
-                value={sortOrder}
-                onChange={(e) => setSortOrder(e.target.value)}
-                className="border px-2 py-1 rounded"
-              >
-                <option value="newest">Newest</option>
-                <option value="oldest">Oldest</option>
-              </select>
-            </div>
-
-            {/* Projects Section */}
+            {/* Only render if projects exist */}
             {filteredProjects.length > 0 && (
               <div className="mt-24 flex flex-col">
-                <Text className="text-xl border-b border-black z-50 pb-2">
-                  Projects
-                </Text>
+                {/* Filter + Sort controls moved here */}
+                <div className="flex items-center gap-4 border-b border-black z-50 pb-2">
+                  <div className="flex gap-2">
+                    {["all", "project", "writeup"].map((tag) => (
+                      <button
+                        key={tag}
+                        onClick={() => setActiveFilter(tag)}
+                        className={`px-3 py-1 rounded text-xs ${
+                          activeFilter === tag
+                            ? "bg-black text-white"
+                            : "bg-gray-200"
+                        }`}
+                      >
+                        {tag}
+                      </button>
+                    ))}
+                  </div>
+
+                  <select
+                    value={sortOrder}
+                    onChange={(e) => setSortOrder(e.target.value)}
+                    className="text-xs border px-2 py-1 rounded"
+                  >
+                    <option value="newest">Newest</option>
+                    <option value="oldest">Oldest</option>
+                  </select>
+                </div>
+
+                {/* Cards grid */}
                 <div className="flex mt-4 gap-5 flex-wrap">
                   {filteredProjects.map((project, index) => (
                     <CardLegend
