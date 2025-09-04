@@ -7,7 +7,7 @@ const Sidebar = () =>{
 
   return (
     <Container>
-      <div className="flex flex-col gap-4 ">
+      <div className="flex flex-col gap-4 mt-8">
       {links.map((link) => (
         <NavLink
           key={link}

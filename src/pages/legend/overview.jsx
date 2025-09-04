@@ -1,15 +1,17 @@
 import React from 'react'
-import Text from '@/components/tokens/atoms/text';
+import Text from '../../components/tokens/atoms/text';
+import Main from '../../components/sections/main';
 
 const Overview =() => {
     return (
         <div>
-            <h1>hey its overview</h1>
-            <div>
-
-            </div>
+            <Main
+         title={"Overview"}
+        description={"a litle aboutmy networking journey"}           
+            />
         </div>
     )
 }
 
 export default Overview;
+

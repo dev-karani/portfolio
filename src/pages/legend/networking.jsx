@@ -1,10 +1,13 @@
 import React from 'react'
+import Text from '../../components/tokens/atoms/text';
+import Main from '../../components/sections/main';
 
 const Networking =() => {
     return (
-        <div>
-            <h1>hey its networking</h1>
-        </div>
+        <Main
+        title={"Networking"}
+        description={"a litle aboutmy networking journey"}
+        />
     )
 }
 
