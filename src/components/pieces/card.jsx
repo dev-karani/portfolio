@@ -20,7 +20,6 @@ const Card = ({ image, title, description, className = "", ...props }) => {
       <div className="p-4 flex flex-col gap-2">
         <Text className="text-base font-bold">{title}</Text>
         <Text>{description}</Text>
-        <Button className="self-start">view here</Button>
       </div>
     </div>
   );

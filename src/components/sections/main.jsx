@@ -1,47 +1,89 @@
-import React from 'react'
-import Text from '../tokens/atoms/text';
-import SectionTitle from '../tokens/atoms/sectionTitle';
-import CardLegend from '../pieces/cardLegend';
-import Container from '../pieces/container';
+import React, { useState } from "react";
+import Text from "../tokens/atoms/text";
+import SectionTitle from "../tokens/atoms/sectionTitle";
+import CardLegend from "../pieces/cardLegend";
+import Container from "../pieces/container";
 
 const Main = ({ title, description, projects }) => {
-    return (
-        <Container>
-            <div className="flex flex-col mt-8">
-                <div className="grid grid-cols-12 min-h-[200vh]">
-                    <div className="col-start-1 col-end-13">
-                        {/* Dynamic Section Title */}
-                        <SectionTitle>{title}</SectionTitle>
+  const [activeFilter, setActiveFilter] = useState("all");
+  const [sortOrder, setSortOrder] = useState("newest");
 
-                        {/* Dynamic Section Description */}
-                        <Text className="max-w-xl">
-                            {description}
-                        </Text>
-
-                        {/* Projects Section */}
-                        {projects && projects.length > 0 && (
-                            <div className="mt-24 flex flex-col">
-                                <Text className="text-xl border-b border-black z-50 pb-2">
-                                    Projects
-                                </Text>
-                                <div className="flex mt-4 gap-5 flex-wrap">
-                                    {projects.map((project, index) => (
-                                        <CardLegend
-                                            key={index}
-                                            image={project.image}
-                                            title={project.title}
-                                            date={project.date}
-                                            description={project.description}
-                                        />
-                                    ))}
-                                </div>
-                            </div>
-                        )}
-                    </div>
-                </div>
-            </div>
-        </Container>
+  // filter + sort
+  const filteredProjects = projects
+    .filter((project) =>
+      activeFilter === "all" ? true : project.tags?.includes(activeFilter)
     )
-}
+    .sort((a, b) => {
+        return sortOrder === "newest"
+          ? new Date(b.date) - new Date(a.date)
+          : new Date(a.date) - new Date(b.date);
+    });
+
+
+  return (
+    <Container>
+      <div className="flex flex-col mt-8">
+        <div className="grid grid-cols-12 min-h-[200vh]">
+          <div className="col-start-1 col-end-13">
+            {/* Dynamic Section Title */}
+            <SectionTitle>{title}</SectionTitle>
+
+            {/* Dynamic Section Description */}
+            <Text className="max-w-xl">{description}</Text>
+
+            {/* Filter + Sort controls */}
+            <div className="mt-6 flex items-center gap-4">
+              <div className="flex gap-2">
+                {["all", "project", "writeup"].map((tag) => (
+                  <button
+                    key={tag}
+                    onClick={() => setActiveFilter(tag)}
+                    className={`px-3 py-1 rounded ${
+                      activeFilter === tag
+                        ? "bg-black text-white"
+                        : "bg-gray-200"
+                    }`}
+                  >
+                    {tag}
+                  </button>
+                ))}
+              </div>
+
+              <select
+                value={sortOrder}
+                onChange={(e) => setSortOrder(e.target.value)}
+                className="border px-2 py-1 rounded"
+              >
+                <option value="newest">Newest</option>
+                <option value="oldest">Oldest</option>
+              </select>
+            </div>
+
+            {/* Projects Section */}
+            {filteredProjects.length > 0 && (
+              <div className="mt-24 flex flex-col">
+                <Text className="text-xl border-b border-black z-50 pb-2">
+                  Projects
+                </Text>
+                <div className="flex mt-4 gap-5 flex-wrap">
+                  {filteredProjects.map((project, index) => (
+                    <CardLegend
+                      key={index}
+                      image={project.image}
+                      title={project.title}
+                      date={project.date}
+                      description={project.description}
+                      tags={project.tags}
+                    />
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </Container>
+  );
+};
 
 export default Main;

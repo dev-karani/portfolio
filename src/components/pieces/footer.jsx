@@ -4,7 +4,7 @@ import Section from "../sections/section";
 import Button from "../tokens/atoms/button";
 import Container from "./container";
 import SectionTitle from "../tokens/atoms/sectionTitle";
-import Foots from "../tokens/foots";
+import Foots from "../tokens/atoms/foots";
 
 
 const Footer = ()=>{

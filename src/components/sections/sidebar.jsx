@@ -7,14 +7,14 @@ const Sidebar = () =>{
 
   return (
     <Container>
-      <div className="flex flex-col gap-4 mt-8">
+      <div className="flex flex-col gap-4 mt-8 sticky top-0 pt-5">
       {links.map((link) => (
         <NavLink
           key={link}
           to={link === "overview" ? "/legend" : `/legend/${link}`}
           end 
           className={({ isActive }) =>
-            `capitalize ${isActive ? "font-bold text-black" : "text-gray-500"}`
+            `capitalize ${isActive ? "font-bold text-black" : " text-gray-600"}`
           }
         >
           {link}

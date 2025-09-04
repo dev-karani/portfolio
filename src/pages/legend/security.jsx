@@ -11,22 +11,14 @@ const Security =() => {
               {
                 image: "/mlue.png",
                 title: "Blockchain Hackathon",
-                date: "12 April 2025",
-                description: "AI hackathon was a blend to create a digital recording tool for African heritage"
+                description: "AI hackathon was a blend to create a digital recording tool for African heritage",
+                tags: ["project", "security"],
+                date: "16 April 2025",
               },
-              {
-                image: "/mlue.png",
-                title: "Network Firewall Lab",
-                date: "20 May 2025",
-                description: "Configured firewalls and monitored network traffic in a home lab setup"
-              }
             ]}
         />
 
     )
 }
-
-    
-
 
 export default Security;

@@ -11,14 +11,32 @@ const Cloud =() => {
               {
                 image: "/mlue.png",
                 title: "Blockchain Hackathon",
+                description: "AI hackathon was a blend to create a digital recording tool for African heritage",
+                tags: ["project", "cloud"],
+                date: "16 April 2025",
+
+              },
+              {
+                image: "/mlue.png",
+                title: "Network Firewall Lab",
+                date: "22 May 2025",
+                description: "Configured firewalls and monitored network traffic in a home lab setup",
+                tags: ["writeup", "cloud"],
+              },
+              {
+                image: "/mlue.png",
+                title: "Network Firewall Lab",
+                description: "Configured firewalls and monitored network traffic in a home lab setup",
+                tags: ["project", "cloud"],
                 date: "12 April 2025",
-                description: "AI hackathon was a blend to create a digital recording tool for African heritage"
               },
               {
                 image: "/mlue.png",
                 title: "Network Firewall Lab",
                 date: "20 May 2025",
-                description: "Configured firewalls and monitored network traffic in a home lab setup"
+                description: "Configured firewalls and monitored network traffic in a home lab setup",
+                tags: ["project", "cloud"],
+
               }
             ]}
         />

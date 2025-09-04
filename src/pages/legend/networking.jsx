@@ -5,9 +5,19 @@ import Main from '../../components/sections/main';
 const Networking =() => {
     return (
         <Main
-        title={"Networking"}
-        description={"a litle aboutmy networking journey"}
+            title="Networking"
+            description="Below are writeups and projects I've done through resources like Let's Defend, TryHackMe, and my home labs..."
+            projects={[
+              {
+                image: "/mlue.png",
+                title: "Blockchain Hackathon",
+                description: "AI hackathon was a blend to create a digital recording tool for African heritage",
+                tags: ["project", "networking"],
+                date: "16 April 2025",
+              },
+            ]}
         />
+
     )
 }
 

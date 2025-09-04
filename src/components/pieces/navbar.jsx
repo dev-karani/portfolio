@@ -6,57 +6,32 @@ import Container from "./container";
 const Navbar = () => {
   return (
     <Container>
-      <nav className="py-2"> 
-      <div className="flex justify-between items-center">
-        <NavLink
-          to="/home"
-          className={({ isActive }) =>
-            isActive ? "font-bold text-blue-500" : "text-gray-700"
-          }
-        >
-          <Text>Home</Text>
-        </NavLink>
-
-        <ul className="flex gap-20">
-          <li>
+      <nav className="py-2 "> 
+          <div className="flex gap-36 justify-center items-center">
             <NavLink
-              to="/legend"
+              to="/home"
               className={({ isActive }) =>
-                isActive ? "font-bold underline text-blue-500" : "text-gray-700"
+                isActive ? "font-bold text-blue-500" : "text-gray-700"
               }
             >
-              <Text>Legend</Text>
+              <Text>Home</Text>
             </NavLink>
-          </li>
-          <li>
             <NavLink
-              to="/about"
-              className={({ isActive }) =>
-                isActive ? "font-bold underline text-blue-500" : "text-gray-700"
-              }
-            >
-              <Text>About</Text>
-            </NavLink>
-          </li>
-          <li>
+                  to="/legend"
+                  className={({ isActive }) =>
+                    isActive ? "font-bold underline text-blue-500" : "text-gray-700"
+                  }
+                >
+                  <Text>Legend</Text>
+             </NavLink>
             <NavLink
-              to="/projects"
-              className={({ isActive }) =>
-                isActive ? "font-bold underline text-blue-500" : "text-gray-700"
-              }
-            >
-              <Text>Projects</Text>
+                  to="/about"
+                  className={({ isActive }) =>
+                    isActive ? "font-bold underline text-blue-500" : "text-gray-700"
+                  }
+                >
+                  <Text>About</Text>
             </NavLink>
-          </li>
-        </ul>
-
-        <a
-          href="https://linkedin.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Text>Linkedin</Text>
-        </a>
       </div>
     </nav>
     </Container>

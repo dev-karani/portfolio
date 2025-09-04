@@ -20,7 +20,7 @@ export default {
         title: "4rem",      // for your 64px case
         section: " 3rem",        // for 44px
         header: "2rem" ,   //for 32px
-        small: "12px",       // for 16px
+        small: "16px",       // for 16px
         normal: "4.5rem"  ,         // 24px 
         normalSmall: "1.25rem",    //20px
         foots: "72px",
