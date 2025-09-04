@@ -1,11 +1,16 @@
 import React from 'react'
+import Container from '../components/pieces/container';
+
 
 const About =() => {
     return (
-        <>  
-        <div>
-            <h1>About</h1>
-        </div>              
+        <> 
+            <Container>
+                <div>
+                    <h1>About</h1>
+                </div>
+            </Container> 
+                      
         </>
     )
 }

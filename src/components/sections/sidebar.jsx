@@ -1,11 +1,13 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import Container from '../pieces/container';
 
 const Sidebar = () =>{
     const links = ["overview", "cloud", "networking", "security"];
 
   return (
-    <div className="flex flex-col gap-4 p-4">
+    <Container>
+      <div className="flex flex-col gap-4 ">
       {links.map((link) => (
         <NavLink
           key={link}
@@ -19,6 +21,8 @@ const Sidebar = () =>{
         </NavLink>
       ))}
     </div>
+    </Container>
+    
   );
 };
 

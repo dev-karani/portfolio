@@ -3,6 +3,9 @@ import Text from "../tokens/atoms/text";
 import Section from "../sections/section";
 import Button from "../tokens/atoms/button";
 import Container from "./container";
+import SectionTitle from "../tokens/atoms/sectionTitle";
+import Foots from "../tokens/foots";
+
 
 const Footer = ()=>{
     return(
@@ -11,7 +14,7 @@ const Footer = ()=>{
                 <Section className="mt-0 mb-16">
                     <div className="flex h-[80vh] flex-col ">
                         <div className="mb-16">
-                            <p className="text-7xl"> Let's make something!</p>
+                            <Foots className="text-[72px] font-normal"> Let's make something!</Foots>
                         </div>
                         <div className="grid grid-cols-12 gap-4 flex-1"> 
                             <div className="col-start-1 col-end-7 flex flex-col justify-between">
@@ -20,15 +23,15 @@ const Footer = ()=>{
                                     <Button>Contact Me </Button>
                                 </div>
                                 <div>
-                                    <Text className=" mb-2 font text-base">Navigation</Text>
-                                    <div className="flex gap-6 ml-2">
+                                    <Text className=" mb-2 font text-base font-semibold">Navigation</Text>
+                                    <div className="flex gap-6 ">
                                         <div>
-                                            <Text className="">Home</Text>
-                                            <Text className="">About</Text>
+                                            <Text className="mb-2 underline">Home</Text>
+                                            <Text className="underline">About</Text>
                                         </div>
                                         <div>
-                                            <Text className="">Legend</Text>
-                                            <Text className="">Labs</Text>
+                                            <Text className="mb-2 underline">Legend</Text>
+                                            <Text className="underline">Labs</Text>
                                         </div>
                                     </div>
                                 </div> 

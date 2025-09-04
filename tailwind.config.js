@@ -22,7 +22,8 @@ export default {
         header: "2rem" ,   //for 32px
         small: "12px",       // for 16px
         normal: "4.5rem"  ,         // 24px 
-        normalSmall: "1.25rem"     //20px
+        normalSmall: "1.25rem",    //20px
+        foots: "72px",
       },
       color: {
         coconut: "#F7F5F2",
