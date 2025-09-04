@@ -1,10 +1,12 @@
 import React from "react";
 import Text from "../tokens/atoms/text";
 import { NavLink } from "react-router-dom";
+import Container from "./container";
 
 const Navbar = () => {
   return (
-    <nav className="py-2"> 
+    <Container>
+      <nav className="py-2"> 
       <div className="flex justify-between items-center">
         <NavLink
           to="/home"
@@ -57,6 +59,7 @@ const Navbar = () => {
         </a>
       </div>
     </nav>
+    </Container>
   );
 };
 

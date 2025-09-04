@@ -1,8 +1,9 @@
 import React from "react";
 
-const Container = ({ children }) => {
+const Container = ({ children, className = "", ...props  }) => {
   return (
-    <div className="px-6">
+    <div className={`px-6 ${className} `}
+      {...props}>
       {children}
     </div>
   );

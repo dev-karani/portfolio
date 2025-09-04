@@ -21,7 +21,7 @@ export default {
         section: " 3rem",        // for 44px
         header: "2rem" ,   //for 32px
         small: "12px",       // for 16px
-        normal: "1.5rem"  ,         // 24px 
+        normal: "4.5rem"  ,         // 24px 
         normalSmall: "1.25rem"     //20px
       },
       color: {
