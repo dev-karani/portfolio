@@ -62,7 +62,7 @@ const Main = ({ title, description, projects }) => {
                 </div>
 
                 {/* Cards grid */}
-                <div className="flex mt-4 gap-5 flex-wrap">
+                <div className="grid gap-6 mt-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                   {filteredProjects.map((project, index) => (
                     <CardLegend
                       key={index}

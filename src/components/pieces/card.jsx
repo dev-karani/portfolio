@@ -17,8 +17,8 @@ const Card = ({ image, title, description, className = "", ...props }) => {
         />
       </div>
 
-      <div className="p-4 flex flex-col gap-2">
-        <Text className="text-base font-bold">{title}</Text>
+      <div className="p-6 flex flex-col gap-2">
+        <Text className="text-small font-bold">{title}</Text>
         <Text>{description}</Text>
       </div>
     </div>

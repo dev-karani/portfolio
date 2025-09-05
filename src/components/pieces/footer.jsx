@@ -10,14 +10,14 @@ import Foots from "../tokens/atoms/foots";
 const Footer = ()=>{
     return(
         <div>
-            <Container>
-                <Section className="mt-0 mb-16">
-                    <div className="flex h-[80vh] flex-col ">
-                        <div className="mb-16">
-                            <Foots className="text-[72px] font-normal"> Let's make something!</Foots>
-                        </div>
+            <Container className="">
+                <Section className="mt-0">
+                    <div className="flex h-[80vh] flex-col">
                         <div className="grid grid-cols-12 gap-4 flex-1"> 
-                            <div className="col-start-1 col-end-7 flex flex-col justify-between">
+                            <div className="col-start-1 col-end-7 flex flex-col pt-16 gap-12">
+                                <div className="">
+                                    <SectionTitle className="text-[72px] font-normal"> Let's make something!</SectionTitle>
+                                </div>
                                 <div className=""> 
                                     <Text className="mb-2 pl-2">Resume/CV</Text>
                                     <Button>Contact Me </Button>

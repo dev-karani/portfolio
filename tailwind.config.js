@@ -12,7 +12,9 @@ export default {
         horizontal: "4rem",   //for 64px
         links: "1.25rem",      //for 20px 
         section: "10rem",       // for 160px
-        next: "7rem"                   // 96px
+        next: "7rem",                   // 96px
+        padding: "clamp(0.75rem, 2vw, 1.5rem)"
+
       },
       fontSize: {
         clamp: "clamp(3rem,8vw,14rem)",
@@ -24,6 +26,9 @@ export default {
         normal: "4.5rem"  ,         // 24px 
         normalSmall: "1.25rem",    //20px
         foots: "72px",
+        big:"clamp(1.25rem,3vw,2rem)",
+        follow:"clamp(1rem,2vw,1.5rem)"
+
       },
       color: {
         coconut: "#F7F5F2",

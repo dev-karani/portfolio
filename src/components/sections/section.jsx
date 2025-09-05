@@ -4,7 +4,7 @@ const Section = ({children, className = "", ...props }) =>{
 
     return (
          <div
-      className={`mt-12 mb-12 ${className} `}
+      className={`mt-12  ${className} `}
       {...props}
     >
       {children}

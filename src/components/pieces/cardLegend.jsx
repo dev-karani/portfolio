@@ -11,7 +11,7 @@ const CardLegend = ({ image, title, description, to, className = "", ...props })
       className={` flex-[0_0_100%] sm:flex-[0_0_25%] lg:flex-[0_0_25%] h-full flex flex-col overflow-hidden shadow-sm ${className}`}
       {...props}
     >
-      <div className="flex-1">
+      <div className="aspect-[16/9] w-full overflow-hidden">
         <img
           src={image}
           alt={title}
@@ -19,13 +19,13 @@ const CardLegend = ({ image, title, description, to, className = "", ...props })
         />
       </div>
 
-      <div className="p-6 flex flex-col gap-2">
+      <div className="p-padding flex flex-col gap-2">
         <Text className="text-small font-bold">{title}</Text>
         <Text>{description}</Text>
         {props.tags && (
             <div className="flex gap-2 flex-wrap mt-2">
               {props.tags.map((tag, i) => (
-                <span key={i} className="bg-gray-200 rounded-full px-2 py-1">
+                <span key={i} className="bg-green-300 rounded-full px-2 py-1 text-xs">
                   {tag}
                 </span>
               ))}
