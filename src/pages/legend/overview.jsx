@@ -12,7 +12,7 @@ const Overview =() => {
                 image: "/mlue.png",
                 title: "Blockchain Hackathon",
                 description: "AI hackathon was a blend to create a digital recording tool for African heritage",
-                tags: ["project", "overview"],
+                tags: ["writeup", "overview"],
                 date: "16 April 2025",
               },
             ]}

@@ -8,14 +8,17 @@ const CardLegend = ({ image, title, description, to, className = "", ...props })
   return (
     <Link
       to = {to}
-      className={` flex-[0_0_100%] sm:flex-[0_0_25%] lg:flex-[0_0_25%] h-full flex flex-col overflow-hidden shadow-sm ${className}`}
+      className={` flex-[0_0_100%] sm:flex-[0_0_25%] lg:flex-[0_0_25%] 
+        h-full flex flex-col overflow-hidden shadow-sm rounded-xl 
+        bg-white transition-all duration-300 ease-in-out
+        hover:shadow-lg hover:-translate-y-1 hover:scale-[1.03] ${className}`}
       {...props}
     >
       <div className="aspect-[16/9] w-full overflow-hidden">
         <img
           src={image}
           alt={title}
-          className=""
+          className="transition-transform duration-500 ease-in-out hover:scale-105"
         />
       </div>
 
