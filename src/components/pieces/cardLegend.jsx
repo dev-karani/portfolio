@@ -2,7 +2,7 @@ import React from "react";
 import Text from "../tokens/atoms/text";
 import { Link } from "react-router-dom";
 
-const CardLegend = ({ image, title, description, tags, date, onSelect, to, className = "" }) => {
+const CardLegend = ({ image, title, description, tags, date, onSelect, to, className = "", ...rest }) => {
   const inner = (
     <div className="h-full flex flex-col overflow-hidden bg-white transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 hover:scale-[1.03]">
       <div className="aspect-[16/9] w-full overflow-hidden bg-gray-100">
@@ -39,7 +39,7 @@ const CardLegend = ({ image, title, description, tags, date, onSelect, to, class
   if (typeof onSelect === "function") {
     return (
       <div
-        onClick={() => onSelect({ image, title, description, tags, date })}
+        onClick={() => onSelect({ image, title, description, tags, date, ...rest })}
         className={`cursor-pointer ${className}`}
       >
         {inner}
