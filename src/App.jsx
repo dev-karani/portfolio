@@ -26,6 +26,7 @@ const App =()=> {
           <Route path="cloud" element={<Cloud />} />
           <Route path="networking" element={<Networking />} />
           <Route path="security" element={<Security />} />
+
       </Route>
 
     </Route>

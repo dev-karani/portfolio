@@ -3,12 +3,13 @@ import Text from "../tokens/atoms/text";
 import SectionTitle from "../tokens/atoms/sectionTitle";
 import CardLegend from "../pieces/cardLegend";
 import Container from "../pieces/container";
+import Modal from "../pieces/modal";
 
 const Main = ({ title, description, projects }) => {
   const [activeFilter, setActiveFilter] = useState("all");
   const [sortOrder, setSortOrder] = useState("newest");
+  const [selectedProject, setSelectedProject] = useState(null);
 
-  // filter + sort
   const filteredProjects = projects
     .filter((project) =>
       activeFilter === "all" ? true : project.tags?.includes(activeFilter)
@@ -33,8 +34,8 @@ const Main = ({ title, description, projects }) => {
             {/* Only render if projects exist */}
             {filteredProjects.length > 0 && (
               <div className="mt-24 flex flex-col">
-                {/* Filter + Sort controls moved here */}
-                <div className="flex items-center gap-4 border-b border-black z-50 pb-2">
+                {/* Filter + Sort controls */}
+                <div className="sticky top-0 bg-gray-100 flex items-center gap-4 border-b border-black z-50 pb-2 pt-3.5">
                   <div className="flex gap-2">
                     {["all", "project", "writeup"].map((tag) => (
                       <button
@@ -66,15 +67,21 @@ const Main = ({ title, description, projects }) => {
                   {filteredProjects.map((project, index) => (
                     <CardLegend
                       key={index}
-                      image={project.image}
-                      title={project.title}
-                      date={project.date}
-                      description={project.description}
-                      tags={project.tags}
+                      {...project}
+                      onSelect={setSelectedProject}
                     />
                   ))}
                 </div>
               </div>
+            )}
+
+            {/* Modal overlay if a card was clicked */}
+            {selectedProject && (
+              <Modal
+                isOpen={!!selectedProject}
+                project={selectedProject}
+                onClose={() => setSelectedProject(null)}
+              />
             )}
           </div>
         </div>

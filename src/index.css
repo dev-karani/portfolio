@@ -12,8 +12,6 @@
   background-color: #F7F5F2;
   color:#1E1919;
 }
-
-
 /* FoundersGrotesk */
 @font-face {
   font-family: 'FoundersGrotesk';
@@ -82,4 +80,16 @@
   src: url('/fonts/NotoSans-Bold.ttf') format('woff2');
   font-weight: 700;
   font-style: normal;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.4s ease-out forwards;
 }

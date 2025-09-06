@@ -12,7 +12,7 @@ const Footer = ()=>{
         <div>
             <Container className="">
                 <Section className="mt-0">
-                    <div className="flex h-[80vh] flex-col">
+                    <div className="flex h-[65vh] flex-col">
                         <div className="grid grid-cols-12 gap-4 flex-1"> 
                             <div className="col-start-1 col-end-7 flex flex-col pt-16 gap-12">
                                 <div className="">
@@ -22,7 +22,7 @@ const Footer = ()=>{
                                     <Text className="mb-2 pl-2">Resume/CV</Text>
                                     <Button>Contact Me </Button>
                                 </div>
-                                <div>
+                                {/* <div>
                                     <Text className=" mb-2 font text-base font-semibold">Navigation</Text>
                                     <div className="flex gap-6 ">
                                         <div>
@@ -34,7 +34,7 @@ const Footer = ()=>{
                                             <Text className="underline">Labs</Text>
                                         </div>
                                     </div>
-                                </div> 
+                                </div>  */}
                             </div> 
                             <div className="col-start-13 col-end-9 h-full">
                                 <div className="flex items-center h-full">

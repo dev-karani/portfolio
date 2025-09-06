@@ -6,7 +6,7 @@ import Button from "../tokens/atoms/button";
 const Card = ({ image, title, description, className = "", ...props }) => {
   return (
     <div
-      className={`h-full flex flex-col overflow-hidden shadow-sm ${className}`}
+      className={`haspect-[16/9] w-full overflow-hidden shadow-sm ${className}`}
       {...props}
     >
       <div className="flex-1">
