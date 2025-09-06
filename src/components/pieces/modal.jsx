@@ -23,7 +23,7 @@ export default function Modal({ project, onClose, isOpen }) {
       />
 
       {/* Modal panel */}
-      <div className="relative ml-auto w-[90%] h-full bg-white shadow-2xl rounded-l-2xl overflow-y-auto">
+      <div className="relative ml-auto w-[90%] h-full bg-white shadow-2xl  overflow-y-auto">
         {/* Close button */}
         <button
           onClick={onClose}
