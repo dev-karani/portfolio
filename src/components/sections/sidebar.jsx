@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import Container from '../pieces/container';
 
 const Sidebar = () =>{
-    const links = ["overview", "cloud", "networking", "security"];
+  const links = ["overview", "cloud", "networking", "security", "software"];
 
   return (
     <Container>

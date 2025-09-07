@@ -8,6 +8,7 @@ import Overview from "./pages/legend/overview";
 import Cloud from "./pages/legend/cloud";
 import Networking from "./pages/legend/networking";
 import Security from "./pages/legend/security";
+import Software from "./pages/legend/softwareEngineering";
 
 const App =()=> {
   return(
@@ -26,6 +27,7 @@ const App =()=> {
           <Route path="cloud" element={<Cloud />} />
           <Route path="networking" element={<Networking />} />
           <Route path="security" element={<Security />} />
+          <Route path="software" element={<Software />} /> {/* ✅ NEW */}
 
       </Route>
 
