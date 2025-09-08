@@ -20,7 +20,7 @@ const Cloud = () => {
           title: "Cloud Writeup",
           date: "22 May 2025",
           description: "Configured firewalls and monitored network traffic in a home lab setup",
-          tags: ["writeup", "cloud"],
+          tags: ["writeup", "cloud","how the internet works"],
           modalComponent: CloudWriteup, // 🔹 This will render inside Modal
         },
         {
