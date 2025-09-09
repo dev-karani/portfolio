@@ -3,7 +3,7 @@ import React from "react";
 const SectionTitle =  ({ children, className = "", ...props }) => {
   return (
     <div
-      className={`text-section font-bold  ${className}`}
+      className={`text-[44px] font-bold  ${className}`}
       {...props}
     >
       {children}

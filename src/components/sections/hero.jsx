@@ -14,7 +14,7 @@ const Hero = () =>{
                             <div className=" flex-1 grid grid-cols-12 gap-4 ">
                                 <div className="col-start-1 col-span-6 mt-8">
                                     <Text className="text-sub ml-[0.3em] mb-2">Hi, I'm an aspiring  </Text>
-                                    <Title className="leading-[0.9] text-clampSub mb-9  " >FullStack <br />Engineer</Title>
+                                    <Title className="leading-[0.9] text-clampSub mb-12  " >FullStack <br />Engineer</Title>
                                     <Button className="">View Projects</Button>
                                 </div>
                                 <div className="col-start-13 col-end-10 flex justify-end items-end">

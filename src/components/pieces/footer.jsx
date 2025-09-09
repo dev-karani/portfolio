@@ -16,7 +16,7 @@ const Footer = ()=>{
                         <div className="grid grid-cols-12 gap-4 flex-1"> 
                             <div className="col-start-1 col-end-7 flex flex-col pt-16 gap-12">
                                 <div className="">
-                                    <SectionTitle className="text-[72px] font-normal"> Let's make something!</SectionTitle>
+                                    <SectionTitle className="text-[53px]  font-normal"> Let's make something!</SectionTitle>
                                 </div>
                                 <div className=""> 
                                     <Text className="mb-2 pl-2">Resume/CV</Text>
