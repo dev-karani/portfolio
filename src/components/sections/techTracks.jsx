@@ -20,9 +20,7 @@ const Tracks = () =>{
                             <Text className="mb-5 max-w-[22rem] text-sm font-[400]">Navigating through tech and IT can be overwhelming. That’s why I create writeups and projects that are visual and use analogies —to help others starting from scratch.</Text>
                         </div>
                         <div className=" flex-3 flex">
-                            <div className="">
-                               <iframe src='https://my.spline.design/untitled-EWySMZHWFGDMFQUNmeyz8aDd/' frameborder='0' width='100%' height='100%'></iframe>
-                            </div>
+                            
                         </div>
                     </div>
                     <div className="flex justify-around  flex-1 mt-16">
