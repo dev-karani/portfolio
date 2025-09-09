@@ -32,7 +32,7 @@ const Main = ({ title, description, projects }) => {
           <div className="col-start-1 col-end-13">
             {/* Title + description */}
             <SectionTitle className="4xl">{title}</SectionTitle>
-            <Text className="max-w-xl">{description}</Text>
+            <Text className="max-w-xl text-base">{description}</Text>
 
             {/* Only render if projects exist */}
             {projects.length > 0 && (
