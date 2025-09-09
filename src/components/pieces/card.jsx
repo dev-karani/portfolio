@@ -19,7 +19,7 @@ const Card = ({ image, title, description, className = "", ...props }) => {
 
       <div className="p-6 flex flex-col gap-2">
         <Text className="text-xl font-bold">{title}</Text>
-        <Text>{description}</Text>
+        <Text className="w-60">{description}</Text>
       </div>
     </div>
   );
