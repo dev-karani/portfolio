@@ -20,13 +20,13 @@ const CardLegend = ({ image, title, description, tags, date, onSelect, to, class
       </div>
 
       <div className="p-6 flex flex-col gap-2">
-        <Text className="text-small font-bold">{title}</Text>
-        <Text className="text-sm text-gray-600 line-clamp-3">{description}</Text>
+        <Text className="text-xl font-bold">{title}</Text>
+        <Text className=" text-gray-600 line-clamp-3">{description}</Text>
 
         {tags && (
           <div className="flex gap-2 flex-wrap mt-2">
             {tags.map((tag, i) => (
-              <span key={i} className="bg-green-200 rounded-full px-2 py-1 text-xs">
+              <span key={i} className="bg-green-200 rounded-full px-2 py-1 ">
                 {tag}
               </span>
             ))}
