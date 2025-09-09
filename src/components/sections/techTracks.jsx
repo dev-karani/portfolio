@@ -17,10 +17,10 @@ const Tracks = () =>{
                     <div className="flex-3 flex flex-col items-center">
                         <div className=" flex flex-1 flex-col text-center">
                             <SectionTitle className="text-3xl mb-4">Tech tracks</SectionTitle>
-                            <Text className="mb-5 max-w-[22rem]  font-[400]">Navigating through tech and IT can be overwhelming. That’s why I create writeups and projects that are visual and use analogies —to help others starting from scratch.</Text>
+                            <Text className="mb-5 max-w-[27rem]  font-[400]">Navigating through tech and IT can be overwhelming. That’s why I create writeups and projects that are visual and use analogies —to help others starting from scratch.</Text>
                         </div>
-                        <div className=" flex-3 flex">
-                            
+                        <div className="  flex-3 flex">
+                            <Animation/>
                         </div>
                     </div>
                     <div className="flex justify-around  flex-1 mt-16">
@@ -31,7 +31,7 @@ const Tracks = () =>{
                                 </svg>
                                 <Header className="">Cloud</Header>
                             </div>
-                            <Text className="w-52">From browser to recepient  all in all it so productive productive</Text>
+                            <Text className="w-60">From browser to recepient  all in all it so productive productive</Text>
                         </div>
                         <div className="flex flex-col"> 
                             <div className="flex items-center gap-2">
@@ -41,7 +41,7 @@ const Tracks = () =>{
                                 <Header>Networking</Header>
 
                             </div>
-                            <Text className="w-40">From browser to recepient all in sll it so productive productive</Text>
+                            <Text className="w-60">From browser to recepient all in sll it so productive productive</Text>
                         </div>
                         <div className="flex flex-col">
                             <div className="flex items-center gap-2">
@@ -50,7 +50,7 @@ const Tracks = () =>{
                                 </svg>
                                 <Header>Security</Header>
                             </div>
-                            <Text className="w-40">From browser to recepient all in sll it so productive productive</Text>
+                            <Text className="w-60">From browser to recepient all in sll it so productive productive</Text>
                         </div>
                     </div>
                 </div>  
