@@ -17,7 +17,7 @@ const Highlights = () =>{
                 <div className="min-h-screen flex flex-col">
                   <div className="flex px-4 flex-col mb-6">
                     <SectionTitle className="text-4xl mb-4">Highlights</SectionTitle>
-                    <Text className=" max-w-[20rem]  font-[400]">
+                    <Text className=" max-w-[25rem]  font-[400]">
                       "A mix of hackathons, passion projects, and explorations. Each one a
                       chance to stretch design, code, and imagination a little further."
                     </Text>
