@@ -38,7 +38,7 @@ const Main = ({ title, description, projects }) => {
             {projects.length > 0 && (
               <div className="mt-10 flex flex-col">
                 {/* 🔹 Filter + Sort controls */}
-                <div className="sticky top-0 bg-white flex flex-wrap gap-3 border-b border-gray-300 z-50 py-3">
+                <div className="sticky top-0 pl-2.5 bg-white flex flex-wrap gap-3 border-b border-gray-300 z-50 py-3">
                   <select
                     value={sortOrder}
                     onChange={(e) => setSortOrder(e.target.value)}
@@ -67,7 +67,7 @@ const Main = ({ title, description, projects }) => {
                 </div>
 
                 {/* 🔹 Cards Grid */}
-                <div className="grid gap-6 mt-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <div className="grid gap-6 mt-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
                   {filteredProjects.map((project) => (
                     <CardLegend
                       key={project.id}
