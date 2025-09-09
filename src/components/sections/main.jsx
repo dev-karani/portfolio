@@ -39,6 +39,14 @@ const Main = ({ title, description, projects }) => {
               <div className="mt-10 flex flex-col">
                 {/* 🔹 Filter + Sort controls */}
                 <div className="sticky top-0 bg-white flex flex-wrap gap-3 border-b border-gray-300 z-50 py-3">
+                  <select
+                    value={sortOrder}
+                    onChange={(e) => setSortOrder(e.target.value)}
+                    className="border px-2 py-1 rounded text-sm"
+                  >
+                    <option value="newest">Newest</option>
+                    <option value="oldest">Oldest</option>
+                  </select>
                   <div className="flex gap-2 flex-wrap">
                     {filterOptions.map((tag) => (
                       <button
@@ -55,14 +63,7 @@ const Main = ({ title, description, projects }) => {
                     ))}
                   </div>
 
-                  <select
-                    value={sortOrder}
-                    onChange={(e) => setSortOrder(e.target.value)}
-                    className="border px-2 py-1 rounded text-sm"
-                  >
-                    <option value="newest">Newest</option>
-                    <option value="oldest">Oldest</option>
-                  </select>
+                  
                 </div>
 
                 {/* 🔹 Cards Grid */}
