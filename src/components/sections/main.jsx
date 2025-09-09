@@ -10,11 +10,9 @@ const Main = ({ title, description, projects }) => {
   const [sortOrder, setSortOrder] = useState("newest");
   const [selectedProject, setSelectedProject] = useState(null);
 
-  // 🔹 Gather all unique tags across all projects
   const allTags = Array.from(new Set(projects.flatMap((p) => p.tags || [])));
   const filterOptions = ["all", ...allTags];
 
-  // 🔹 Filter + sort
   const filteredProjects = projects
     .filter((project) =>
       activeFilter === "all" ? true : project.tags?.includes(activeFilter)
@@ -34,15 +32,14 @@ const Main = ({ title, description, projects }) => {
             <SectionTitle className="text-4xl">{title}</SectionTitle>
             <Text className="max-w-xl text-base">{description}</Text>
 
-            {/* Only render if projects exist */}
             {projects.length > 0 && (
               <div className="mt-10 flex flex-col">
-                {/* 🔹 Filter + Sort controls */}
-                <div className="sticky top-0 pl-2.5 bg-white flex flex-wrap gap-3 border-b border-gray-300 z-50 py-3">
+                {/* Filter + Sort controls */}
+                <div className="sticky top-0 pl-2.5 bg-white flex flex-wrap gap-3 border-b border-gray-300 z-50 py-3 text-base">
                   <select
                     value={sortOrder}
                     onChange={(e) => setSortOrder(e.target.value)}
-                    className="border px-2 py-1 rounded text-sm"
+                    className="border px-2 py-1 rounded text-base"
                   >
                     <option value="newest">Newest</option>
                     <option value="oldest">Oldest</option>
@@ -52,7 +49,7 @@ const Main = ({ title, description, projects }) => {
                       <button
                         key={tag}
                         onClick={() => setActiveFilter(tag)}
-                        className={`px-3 py-1 rounded text-xs transition ${
+                        className={`px-3 py-1 rounded text-base transition ${
                           activeFilter === tag
                             ? "bg-black text-white"
                             : "bg-gray-200 hover:bg-gray-300"
@@ -62,12 +59,10 @@ const Main = ({ title, description, projects }) => {
                       </button>
                     ))}
                   </div>
-
-                  
                 </div>
 
-                {/* 🔹 Cards Grid */}
-                <div className="grid gap-6 mt-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
+                {/* Cards Grid */}
+                <div className="grid gap-6 mt-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                   {filteredProjects.map((project) => (
                     <CardLegend
                       key={project.id}
@@ -77,14 +72,14 @@ const Main = ({ title, description, projects }) => {
                   ))}
                 </div>
 
-                {/* 🔹 Empty state */}
+                {/* Empty state */}
                 {filteredProjects.length === 0 && (
                   <Text className="text-gray-500 mt-6">No projects found.</Text>
                 )}
               </div>
             )}
 
-            {/* Modal for selected project */}
+            {/* Modal */}
             {selectedProject && (
               <Modal
                 isOpen={!!selectedProject}
