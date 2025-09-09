@@ -7,7 +7,7 @@ const Button = ({ children, className = "", ...props }) => {
         inline-flex items-center justify-center
         px-6 py-3
         bg-gray-300 tex
-        text-sm text-graphite font-medium
+        text-base text-graphite font-medium
         border border-black text-coconut hover:bg-coconut hover:text-black        active:scale-95
         transition-all duration-200
         whitespace-nowrap

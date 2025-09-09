@@ -8,7 +8,7 @@ const Animation =() =>{
     let rive;
     if (canvasRef.current) {
       rive = new Rive({
-        src: "../../public/orbit.riv", // ✅ load from /public
+        src: "/orbit.riv", // ✅ load from /public
         canvas: canvasRef.current,
         autoplay: true,
         renderer: "webgl", // ✅ force WebGL, no 2D canvas
