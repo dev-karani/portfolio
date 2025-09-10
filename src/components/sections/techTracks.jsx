@@ -23,7 +23,7 @@ const Tracks = () =>{
                             <Animation/>
                         </div>
                     </div>
-                    <div className="flex justify-around  flex-1 mt-16">
+                    <div className="flex justify-around  flex-1 mt-8">
                         <div className="flex flex-col">
                             <div className="flex items-center gap-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">

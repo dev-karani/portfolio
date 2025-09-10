@@ -13,8 +13,8 @@ const Highlights = () =>{
     return (
         <>
             <Container>
-            <Section className="mt-32">
-                <div className="min-h-screen flex flex-col">
+            <Section className="mt-40">
+                <div className="h-screen flex flex-col">
                   <div className="flex px-4 flex-col mb-6">
                     <SectionTitle className="text-4xl mb-4">Highlights</SectionTitle>
                     <Text className=" max-w-[25rem]  font-[400]">
