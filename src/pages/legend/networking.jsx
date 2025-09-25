@@ -1,7 +1,7 @@
 import React from 'react'
 import Text from '../../components/tokens/atoms/text';
 import Main from '../../components/sections/main';
-import packetTracer from '../../modals/ciscoPacetTracer';
+import packetTracer from '../../modals/ciscoPacketTracer';
 
 const Networking =() => {
     return (
