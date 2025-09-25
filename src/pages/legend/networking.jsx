@@ -12,7 +12,7 @@ const Networking =() => {
               {
                 image: "/packetTracer.png",
                 title: "Cisco PacketTracer 101",
-                description: "Through lessons and assignments, I learn how to use packetTracer to simulate networks",
+                description: "In this lesson, I learn how to use packetTracer to simulate networks",
                 tags: ["writeup", "networking", "StartingPoint", "Cisco"],
                 date: "25 September 2025",
                 modalComponent: packetTracer, // 🔹 This will render inside Modal
