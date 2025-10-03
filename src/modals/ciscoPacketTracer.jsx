@@ -89,7 +89,7 @@ const PacketTracer= () =>{
         {/* Screenshots Placeholder */}
         <section className="mb-12">
         <h2 className="text-xl font-semibold mb-4 text-gray-800">📸 Screenshots</h2>
-        <div className="grid gap-6 sm:grid-cols-2">
+        <div className="grid gap-6 ">
           <div className="overflow-hidden rounded-xl shadow">
             <img
               src="/sohoLab.png"
