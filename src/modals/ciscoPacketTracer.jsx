@@ -93,10 +93,11 @@ const PacketTracer= () =>{
           </h2>
           <div className="space-y-4">
             <div className="bg-gray-200 rounded-xl h-56 w-full flex items-center justify-center text-gray-500">
-              <img src="/packetTracer.png" alt="" />
+              <img src="/sohoLab.png" alt="" />
+
             </div>
             <div className="bg-gray-200 rounded-xl h-56 w-full flex items-center justify-center text-gray-500">
-                <img src="/sohoLab.png" alt="" />
+              <img src="/cmdSohoLab.png" alt="" />
             </div>
           </div>
         </section>
