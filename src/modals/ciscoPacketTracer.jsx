@@ -87,20 +87,25 @@ const PacketTracer= () =>{
 
         {/* Screenshots Placeholder */}
         {/* Screenshots Placeholder */}
-        <section className="mb-8 mt-8">
-          <h2 className="text-xl font-semibold mb-3 text-gray-800">
-            📸 Screenshots
-          </h2>
-          <div className="space-y-4 mb-8">
-            <div className="bg-gray-200 rounded-xl h-56 w-full flex items-center justify-center text-gray-500">
-              <img src="/sohoLab.png" alt="" />
-
-            </div>
-            <div className="bg-gray-200 rounded-xl mb-8 h-56 w-full flex items-center justify-center text-gray-500">
-              <img src="/cmdSohoLab.png" alt="" />
-            </div>
+        <section className="mb-12">
+        <h2 className="text-xl font-semibold mb-4 text-gray-800">📸 Screenshots</h2>
+        <div className="grid gap-6 sm:grid-cols-2">
+          <div className="overflow-hidden rounded-xl shadow">
+            <img
+              src="/sohoLab.png"
+              alt="SOHO Network Topology"
+              className="w-full h-auto object-contain"
+            />
           </div>
-        </section>
+          <div className="overflow-hidden rounded-xl shadow">
+            <img
+              src="/cmdSohoLab.png"
+              alt="Ping test in CMD"
+              className="w-full h-auto object-contain"
+            />
+          </div>
+        </div>
+        </       section>
 
 
         {/* Reflection */}
