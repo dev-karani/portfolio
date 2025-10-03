@@ -93,10 +93,10 @@ const PacketTracer= () =>{
           </h2>
           <div className="space-y-4">
             <div className="bg-gray-200 rounded-xl h-56 w-full flex items-center justify-center text-gray-500">
-              Topology Image Here
+              <img src="/packetTracer.png" alt="" />
             </div>
             <div className="bg-gray-200 rounded-xl h-56 w-full flex items-center justify-center text-gray-500">
-              Ping Test Image Here
+                <img src="/sohoLab.png" alt="" />
             </div>
           </div>
         </section>
