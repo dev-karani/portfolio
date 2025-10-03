@@ -11,10 +11,10 @@ const Networking =() => {
             projects={[
               {
                 image: "/packetTracer.png",
-                title: "Cisco PacketTracer 101",
+                title: "101: My First SOHO Lab",
                 description: "In this lesson, I learn how to use packetTracer to simulate networks",
-                tags: ["writeup", "networking", "StartingPoint", "Cisco"],
-                date: "25 September 2025",
+                tags: ["project", "networking", "StartingPoint", "Cisco"],
+                date: "1 October 2025",
                 modalComponent: packetTracer, // 🔹 This will render inside Modal
               },
               {
@@ -24,13 +24,7 @@ const Networking =() => {
                 tags: ["writeup", "networking"],
                 date: "16 April 2025",
               },
-              {
-                image: "/mlue.png",
-                title: "Blockchain Hackathon",
-                description: "AI hackathon was a blend to create a digital recording tool for African heritage",
-                tags: ["writeup", "networking"],
-                date: "16 April 2025",
-              },
+             
             ]}
         />
 
