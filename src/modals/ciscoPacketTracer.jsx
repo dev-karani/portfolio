@@ -86,20 +86,21 @@ const PacketTracer= () =>{
         </section>
 
         {/* Screenshots Placeholder */}
+        {/* Screenshots Placeholder */}
         <section className="mb-8">
           <h2 className="text-xl font-semibold mb-3 text-gray-800">
             📸 Screenshots
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-gray-200 rounded-xl h-48 flex items-center justify-center text-gray-500">
-              <img src="/sohoLab.png" alt="" />
+          <div className="space-y-4">
+            <div className="bg-gray-200 rounded-xl h-56 w-full flex items-center justify-center text-gray-500">
+              Topology Image Here
             </div>
-            <div className="bg-gray-200 rounded-xl h-48 flex items-center justify-center text-gray-500">
-              <img src="/cmdSohoLab.png" alt="" />
-
+            <div className="bg-gray-200 rounded-xl h-56 w-full flex items-center justify-center text-gray-500">
+              Ping Test Image Here
             </div>
           </div>
         </section>
+
 
         {/* Reflection */}
         <section>
