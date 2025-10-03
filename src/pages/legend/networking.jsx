@@ -17,14 +17,7 @@ const Networking =() => {
                 date: "1 October 2025",
                 modalComponent: packetTracer, // 🔹 This will render inside Modal
               },
-              {
-                image: "/mlue.png",
-                title: "Blockchain Hackathon",
-                description: "AI hackathon was a blend to create a digital recording tool for African heritage",
-                tags: ["writeup", "networking"],
-                date: "16 April 2025",
-              },
-             
+              
             ]}
         />
 
