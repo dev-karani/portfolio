@@ -15,7 +15,7 @@ const Hero = () =>{
                                 <div className="col-start-1 col-span-6 mt-8">
                                     <Text className="text-sub ml-[0.3em] mb-2">Hi, I'm a  </Text>
                                     <Title className="leading-[0.9] text-clampSub mb-11  " >Fullstack <br />Engineer</Title>
-                                    <Button to="/legend" className="ml-2.5 bg-[#FAD24B]  hover:bg-[#F7F5F2] text-black">View Projects</Button>
+                                    <Button to="/legend" className="ml-2.5 bg-[#B4DC19]  hover:bg-[#F7F5F2] text-black">View Projects</Button>
 
                                 </div>
                                 <div className="col-start-13 col-end-10 flex justify-end items-end">
