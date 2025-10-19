@@ -12,7 +12,7 @@ const Footer = ()=>{
         <div>
             <Container className="">
                 <Section className="mt-0">
-                    <div className="flex h-[65vh] flex-col">
+                    <div className="flex h-[75vh] flex-col">
                         <div className="grid grid-cols-12 gap-4 flex-1"> 
                             <div className="col-start-1 col-end-7 flex flex-col pt-16 gap-12">
                                 <div className="">
@@ -20,7 +20,12 @@ const Footer = ()=>{
                                 </div>
                                 <div className=""> 
                                     <Text className="mb-2 pl-2">Resume/CV</Text>
-                                    <Button>Contact Me </Button>
+                                <Button
+                                  href="https://www.linkedin.com/in/edwin-kithinji-02b469368/"
+                                  className="bg-green-200 hover:bg-green-500 hover:text-white"
+                                >
+                                  Contact Me
+                                </Button>
                                 </div>
                                 {/* <div>
                                     <Text className=" mb-2 font text-base font-semibold">Navigation</Text>

@@ -9,13 +9,14 @@ const Hero = () =>{
     return (
         <div>
             <Container>
-                <div className=" flex flex-col min-h-[calc(95vh-var(--navbar-height))] " >
+                <div className=" mb-5 flex flex-col min-h-[calc(95vh-var(--navbar-height))] " >
                      <div className="flex-1  flex flex-col "> 
                             <div className=" flex-1 grid grid-cols-12 gap-4 ">
                                 <div className="col-start-1 col-span-6 mt-8">
-                                    <Text className="text-sub ml-[0.3em] mb-2">Hi, I'm an aspiring  </Text>
-                                    <Title className="leading-[0.9] text-clampSub mb-11  " >FullStack <br />Engineer</Title>
-                                    <Button className="ml-2.5">View Projects</Button>
+                                    <Text className="text-sub ml-[0.3em] mb-2">Hi, I'm a  </Text>
+                                    <Title className="leading-[0.9] text-clampSub mb-11  " >Fullstack <br />Engineer</Title>
+                                    <Button to="/legend" className="ml-2.5 bg-blue-100 hover:bg-blue-500 hover:text-white">View Projects</Button>
+
                                 </div>
                                 <div className="col-start-13 col-end-10 flex justify-end items-end">
                                     <Animation></Animation>

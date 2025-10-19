@@ -5,7 +5,7 @@ import CardLegend from "../pieces/cardLegend";
 import Container from "../pieces/container";
 import Modal from "../pieces/modal";
 
-const Main = ({ title, description, projects }) => {
+const Main = ({ title, description, projects, summary }) => {
   const [activeFilter, setActiveFilter] = useState("all");
   const [sortOrder, setSortOrder] = useState("newest");
   const [selectedProject, setSelectedProject] = useState(null);
@@ -29,8 +29,9 @@ const Main = ({ title, description, projects }) => {
         <div className="grid grid-cols-12">
           <div className="col-start-1 col-end-13">
             {/* Title + description */}
-            <SectionTitle className="text-4xl mb-1.5">{title}</SectionTitle>
-            <Text className="max-w-xl text-base">{description}</Text>
+            <SectionTitle className="text-4xl mb-5 ">{title}</SectionTitle>
+            <Text className="w-100">{description}</Text>
+            {summary && <div className="max-w-xl mb-4">{summary}</div>}
 
             {projects.length > 0 && (
               <div className="mt-10 flex flex-col">

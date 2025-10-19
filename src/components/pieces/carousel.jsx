@@ -19,9 +19,10 @@ export default function EmblaCarousel({ children }) {
         <div className="flex h-full">
           {React.Children.map(children, (child, i) => (
             <div
-              className="flex-[0_0_100%] sm:flex-[0_0_50%] lg:flex-[0_0_33.33%] p-4"
-              key={i}
-            >
+  className="flex-[0_0_90%] sm:flex-[0_0_45%] lg:flex-[0_0_30%] p-4"
+  key={i}
+>
+
               <div className="h-full">{child}</div>
             </div>
           ))}

@@ -1,15 +1,14 @@
 import React from "react";
-import Header from "../tokens/atoms/Header";
 import Text from "../tokens/atoms/text";
-import Button from "../tokens/atoms/button";
 
 const Card = ({ image, title, description, className = "", ...props }) => {
   return (
     <div
-      className={`h-aspect-[16/9]  overflow-hidden shadow-sm ${className}`}
+      className={`flex flex-col overflow-hidden ${className}`}
       {...props}
     >
-      <div className="flex-1 aspect-[16/9] w-full overflow-hidden bg-gray-100">
+      {/* Image */}
+      <div className="aspect-[16/9] w-full overflow-hidden">
         <img
           src={image}
           alt={title}
@@ -17,9 +16,10 @@ const Card = ({ image, title, description, className = "", ...props }) => {
         />
       </div>
 
-      <div className="p-6 flex flex-col gap-2">
-        <Text className="text-xl font-bold">{title}</Text>
-        <Text className="w-72">{description}</Text>
+      {/* Text */}
+      <div className="p-5 flex flex-col gap-1">
+        <Text className="text-lg font-semibold text-white">{title}</Text>
+        <Text className="text-sm text-gray-400">{description}</Text>
       </div>
     </div>
   );

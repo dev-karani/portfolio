@@ -8,6 +8,14 @@ const Networking =() => {
         <Main
             title="Networking"
             description="Below are writeups and projects I've done through resources like Let's Defend, TryHackMe, and my home labs..."
+            summary={
+           <div>
+             <p>In this section I explore...</p>
+             <blockquote className="border-l-4 pl-3 text-gray-600">
+               “The network is the computer.” — Sun Microsystems
+             </blockquote>
+           </div>
+            }
             projects={[
               {
                 image: "/packetTracer.png",
