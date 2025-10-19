@@ -22,7 +22,7 @@ const Footer = ()=>{
                                     <Text className="mb-2 pl-2">Resume/CV</Text>
                                 <Button
                                   href="https://www.linkedin.com/in/edwin-kithinji-02b469368/"
-                                  className="bg-green-200 hover:bg-green-500 hover:text-white"
+                                  className="bg-[#B4DC19] hover:bg-green-200 text-white"
                                 >
                                   Contact Me
                                 </Button>
