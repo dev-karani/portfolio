@@ -6,7 +6,7 @@ const Software =() => {
     return (
         <Main
             title="Software"
-            description="Below are writeups and projects I've done through resources like Let's Defend, TryHackMe, and my home labs..."
+            description="Im onthe fullstack open path, so be sure ill post sooner. that, and hackathons ill take part in"
             projects={[
               {
                 image: "/mlue.png",
@@ -15,20 +15,7 @@ const Software =() => {
                 tags: ["project", "networking"],
                 date: "16 April 2025",
               },
-              {
-                image: "/mlue.png",
-                title: "Blockchain Hackathon",
-                description: "AI hackathon was a blend to create a digital recording tool for African heritage",
-                tags: ["writeup", "networking"],
-                date: "16 April 2025",
-              },
-              {
-                image: "/mlue.png",
-                title: "Blockchain Hackathon",
-                description: "AI hackathon was a blend to create a digital recording tool for African heritage",
-                tags: ["writeup", "networking"],
-                date: "16 April 2025",
-              },
+             
             ]}
         />
 

@@ -7,7 +7,7 @@ const Networking =() => {
     return (
         <Main
             title="Networking"
-            description="Below are writeups and projects I've done through resources like Let's Defend, TryHackMe, and my home labs..."
+            description="In this section I explore.. networking basics with CISCO netcad"
             summary={
            <div>
              <p>In this section I explore...</p>

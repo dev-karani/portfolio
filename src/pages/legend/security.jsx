@@ -6,27 +6,13 @@ const Security =() => {
     return (
         <Main
             title="Security"
-            description="Below are writeups and projects I've done through resources like Let's Defend, TryHackMe, and my home labs..."
+            description="Currently in my SOC path in Try Hack Me/ Let's defend. will be posting SOON. And also for other skills like scripting"
             projects={[
               {
                 image: "/mlue.png",
-                title: "Blockchain Hackathon",
-                description: "AI hackathon was a blend to create a digital recording tool for African heritage",
+                title: "SOC Analyst Path",
+                description: "Currently in my SOC path in Try Hack Me/ Let's defend. will be posting SOON",
                 tags: ["project", "security"],
-                date: "16 April 2025",
-              },
-              {
-                image: "/mlue.png",
-                title: "Blockchain Hackathon",
-                description: "AI hackathon was a blend to create a digital recording tool for African heritage",
-                tags: ["writeup", "security"],
-                date: "16 April 2025",
-              },
-              {
-                image: "/mlue.png",
-                title: "Blockchain Hackathon",
-                description: "AI hackathon was a blend to create a digital recording tool for African heritage",
-                tags: ["writeup", "security"],
                 date: "16 April 2025",
               },
             ]}
