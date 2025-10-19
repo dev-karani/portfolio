@@ -12,7 +12,7 @@ const Footer = ()=>{
         <div>
             <Container className="">
                 <Section className="mt-0">
-                    <div className="flex h-[75vh] flex-col">
+                    <div className="flex h-[65vh] flex-col">
                         <div className="grid grid-cols-12 gap-4 flex-1"> 
                             <div className="col-start-1 col-end-7 flex flex-col pt-16 gap-12">
                                 <div className="">

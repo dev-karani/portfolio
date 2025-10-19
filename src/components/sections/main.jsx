@@ -30,7 +30,7 @@ const Main = ({ title, description, projects, summary }) => {
           <div className="col-start-1 col-end-13">
             {/* Title + description */}
             <SectionTitle className="text-4xl mb-5 ">{title}</SectionTitle>
-            <Text className="w-100">{description}</Text>
+            <Text className="">{description}</Text>
             {summary && <div className="max-w-xl mb-4">{summary}</div>}
 
             {projects.length > 0 && (
