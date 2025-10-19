@@ -29,7 +29,7 @@ const Main = ({ title, description, projects }) => {
         <div className="grid grid-cols-12">
           <div className="col-start-1 col-end-13">
             {/* Title + description */}
-            <SectionTitle className="text-4xl">{title}</SectionTitle>
+            <SectionTitle className="text-4xl mb-1.5">{title}</SectionTitle>
             <Text className="max-w-xl text-base">{description}</Text>
 
             {projects.length > 0 && (

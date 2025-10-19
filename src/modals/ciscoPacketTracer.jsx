@@ -32,7 +32,7 @@ const PacketTracer= () =>{
           <h2 className="text-xl font-semibold mb-3 text-gray-800">
             🔹 Devices Used
           </h2>
-          <ul className="list-disc list-inside space-y-1 text-gray-700">
+          <ul className="list-disc list-inside space-y-1 text-gray-700 flex">
             <li>PC</li>
             <li>Laptop (wireless)</li>
             <li>Cable Modem</li>
@@ -86,26 +86,19 @@ const PacketTracer= () =>{
         </section>
 
         {/* Screenshots Placeholder */}
-        {/* Screenshots Placeholder */}
-        <section className="mb-12">
-        <h2 className="text-xl font-semibold mb-4 text-gray-800">📸 Screenshots</h2>
-        <div className="grid gap-6 ">
-          <div className="overflow-hidden rounded-xl shadow">
-            <img
-              src="/sohoLab.png"
-              alt="SOHO Network Topology"
-              className="w-full h-auto object-contain"
-            />
+        <section className="mb-8 mt-8">
+          <h2 className="text-xl font-semibold mb-3 text-gray-800">
+            📸 Screenshots
+          </h2>
+          <div className="space-y-6">
+            <div className="bg-gray-200 rounded-xl w-full flex items-center justify-center overflow-hidden">
+              <img src="/sohoLab.png" alt="SOHO Lab Topology" className="w-full h-auto object-contain" />
+            </div>
+            <div className="bg-gray-200 rounded-xl w-full flex items-center justify-center overflow-hidden">
+              <img src="/cmdSohoLab.png" alt="Command line ping test" className="w-full h-auto object-contain" />
+            </div>
           </div>
-          <div className="overflow-hidden rounded-xl shadow">
-            <img
-              src="/cmdSohoLab.png"
-              alt="Ping test in CMD"
-              className="w-full h-auto object-contain"
-            />
-          </div>
-        </div>
-        </       section>
+        </section>
 
 
         {/* Reflection */}
